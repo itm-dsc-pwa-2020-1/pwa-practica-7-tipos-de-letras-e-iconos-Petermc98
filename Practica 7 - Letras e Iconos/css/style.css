@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh; 
+  }
+  *,
+  *:after,
+  *:before {
+    box-sizing: inherit; 
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,105,130,1) 0%, rgba(58,111,110,1) 100%, rgba(0,212,255,1) 100%);
+  }
+@font-face {
+    font-family: tangerine-bold;
+    src: url('../font/tangerine-bold.ttf');
+}
+@font-face {
+    font-family: roboto-bold;
+    src: url('../font/Roboto-Bold.ttf');
+    }
+    @font-face {
+        font-family: Collegiate;
+        src: url('../font/SF_Collegiate_Solid.ttf');
+        }
+.contenedor{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 50%;
+    justify-content: center;
+    grid-template-rows: 20% 60% 20%;
+    color: white;
+}
+.conten1{
+text-align: center;
+grid-column: 1/3;
+font-family: tangerine-bold;
+font-size: 40px;
+}
+.conten2{
+    font-family: roboto-bold;
+    font-size: 1.3vh;
+    padding: 0px 15px 0px 15px;
+}
+.conten2 table{
+    height: 10vh;
+}
+.footer{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    padding: 30px;
+    font-family: Collegiate;
+    font-size: 3vh;
+}
+footer img{
+    width: 3rem;
+    height: 3rem;
+}
+.icon{
+    height: 2rem;
+}
+.perfil{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 4px;
+}
+.conten2 tr{
+    height: 2rem;
+}
+.conten2 td{
+    vertical-align: top;
+    width: 20%;
+}
